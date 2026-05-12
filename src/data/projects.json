@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1224267498,
+    "proposal_no": "WL/JK/ROAD/575647/2026",
+    "project_name": "Construction and Maintenance of Link Road from L051-(Link Road) BL road KM 28th RD 950m to Jatpati Awoora, (Complete Stage) Package No JK01-4001, Length=2.60 KM Carriage way width- 3.75 m Under New Technology, Waste Plastic) , PMGSY-IV, Batch-I of 2025-26",
+    "status": "SUBMITTED",
+    "type": "Wildlife",
+    "last_updated": "2026-04-17 16:04:32.655",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224121681,
+    "proposal_no": "FP/JK/ROAD/575489/2026",
+    "project_name": "Construction and Maintenance of Link Road from L045-(Link Road) Larnoo to Pehlipora KM 2nd RD 200 m to Razkan, Stage Complete, Package No JK01-4002, Length=2.70 KM Carriage way width- 3.75 m (Under New Technology, Waste Plastic) PMGSY IV, Batch I, FY 2025-26",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-15 01:17:41.924",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224224545,
+    "proposal_no": "FP/JK/ROAD/575607/2026",
+    "project_name": "Construction and Maintenance of Link Road from L052-(Link Road) KP Road KM 33rd RD 50m to Hukahard Package No JK01-4012, Length=3.50 KM Carriage way width- 3.75 m (Under New Technology, Waste Plastic) Complete Stage, PMGSY-IV, Batch-I of 2025-26",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-16 15:08:47.827",
+    "is_parivesh": true
+  },
+  {
+    "id": 1223259530,
+    "proposal_no": "WL/JK/ROAD/574499/2026",
+    "project_name": "Construction and Maintenance of L023-Link From Bathnoor - Karmulla Road End Point to Bugmud, Package No.JK10-4013, Length=4.00KMs Carriage way width 3.75m,Complete Stage, PMGSY IV,Batch-1 of 2025-2026",
+    "status": "Pending at Proponent",
+    "type": "Wildlife",
+    "last_updated": "2026-04-07 15:42:18.332",
+    "is_parivesh": true
+  },
+  {
+    "id": 1223664775,
+    "proposal_no": "WL/JK/ROAD/575012/2026",
+    "project_name": "Construction and Maintenance of L024-Link From Gulistan Pranigam road end point to Ropsisaran, Package No.JK10-4001, Length=2.94KMs Carriage way width 3.75m,Complete Stage, PMGSY IV,Batch-1 of 2025-2026",
+    "status": "Pending at Proponent",
+    "type": "Wildlife",
+    "last_updated": "2026-04-08 11:12:40.6",
+    "is_parivesh": true
+  },
+  {
+    "id": 1225650367,
+    "proposal_no": "WL/JK/ROAD/577088/2026",
+    "project_name": " Construction and Maintenance of L021-Link from Ladhoo Mandakpal road KM 1st RD 400m to Babseer, Package No.JK10-4007, Length=10.26KMs Carriage way width 3.75m (Under New Technology, Waste Plastic) Complete Stage, PMGSY IV,Batch-1 of 2025-2026.",
+    "status": "SUBMITTED",
+    "type": "Wildlife",
+    "last_updated": "2026-04-27 14:26:04.559",
+    "is_parivesh": true
+  },
+  {
+    "id": 1223687694,
+    "proposal_no": "FP/JK/ROAD/575045/2026",
+    "project_name": "Construction and Maintenance of L021-Link From Pulwama aabhama Sangarwani road EP to Wanchiwada Hill, Package No.JK10-4022, Length=5.70KMs Carriage way width 3.75m,Complete Stage, PMGSY IV,Batch-1 of 2025-2026",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-12 01:59:22.859665",
+    "is_parivesh": true
+  },
+  {
+    "id": 1223677008,
+    "proposal_no": "WL/JK/ROAD/575025/2026",
+    "project_name": "Construction and Maintenance of L023-Link From Naristan to Wantnod road KM 1st RD 75m to Mugaduggin, Package No.JK10-4005, Length=3.00KMs Carriage way width 3.75m,Complete Stage, PMGSY IV,Batch-1 of 2025-2026",
+    "status": "Pending at Proponent",
+    "type": "Wildlife",
+    "last_updated": "2026-04-08 14:38:37.958",
+    "is_parivesh": true
+  },
+  {
+    "id": 1219932390,
+    "proposal_no": "FP/JK/ROAD/569942/2026",
+    "project_name": "Construction and Maintenance of L022-Link from L067-Kathohalan to Nagbal B road end point to Gulabjadi, Package No.JK22-4002,Length 3.00 KMs, carriage way width 3.75m,Complete Stage, PMGSY IV, Batch-I of 2025-2026",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-24 01:59:47.703819",
+    "is_parivesh": true
+  },
+  {
+    "id": 1225682941,
+    "proposal_no": "FP/JK/ROAD/577122/2026",
+    "project_name": "Construction and Maintenance of Road from Gatipora - Kathauhalan Road KM 1st RD 300 to Sainimarg, Package No.JK22-4002, Length=3.10KMs Carriage way width 3.75m,Complete Stage, PMGSY IV,Batch-1 of 2025-2026.",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-09 16:59:41.77",
+    "is_parivesh": true
+  }
+]
