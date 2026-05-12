@@ -45,3 +45,5 @@ scrape_to_json.mjs
 sync_projects.mjs
 setup_db.mjs
 test_*.mjs
+
+.vercel

@@ -88,5 +88,959 @@
     "type": "Forest",
     "last_updated": "2026-05-09 16:59:41.77",
     "is_parivesh": true
+  },
+  {
+    "id": 1225716715,
+    "proposal_no": "FP/JK/ROAD/577170/2026",
+    "project_name": "Construction and Maintenance of L025-Link from Vshru B - Shalidar Road KM 1st RD 700 to Takiabal, Package No.JK22-4003,Length 3.00 KMs, carriage way width 3.75m,Complete Stage, PMGSY IV, Batch-I of 2025-2026",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-09 16:39:37.058",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224999825,
+    "proposal_no": "FP/JK/OTHERS/576446/2026",
+    "project_name": "Construction and Maintenance of road from L056-(Link Road) Gurwait Pahnar Road Km 3rd RD 900 to Doli Mohalla Package No JK02-4015",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-27 11:19:37.163",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224762606,
+    "proposal_no": "FP/JK/OTHERS/576227/2026",
+    "project_name": "Construction and maintenance of L049-(Link Road) L031 Km 8th RD 700 to Berinkhal Package No JK02-4026",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-20 15:11:31.459",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224151476,
+    "proposal_no": "FP/JK/OTHERS/575512/2026",
+    "project_name": "Construction and Maintenance of Link Road From L09 Katyali to Dobri Konzabal Shalkani Package No JK024018",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-20 08:48:37.766",
+    "is_parivesh": true
+  },
+  {
+    "id": 1225157842,
+    "proposal_no": "FP/JK/OTHERS/576619/2026",
+    "project_name": "Construction and Maintenance of Road from L048-(Link Road) L031 Km 13th RD900 to Tedwari via Chohan Mohalla Package No JK02-4009",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-27 18:39:30.639",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/575362/2026",
+    "proposal_no": "FP/JK/ROAD/575362/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": "FP/JK/ROAD/576597/2026",
+    "proposal_no": "FP/JK/ROAD/576597/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1224473713,
+    "proposal_no": "FP/JK/ROAD/575892/2026",
+    "project_name": "L023 – (Link Road) Chatoosa–Pazalpora Hamam KM 8th to Markote, Package No. JK03-4004.",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-18 14:21:12.09",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/576358/2026",
+    "proposal_no": "FP/JK/ROAD/576358/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 862956778,
+    "proposal_no": "FP/JK/OTHERS/560842/2025",
+    "project_name": "Construction and Maintenance of road from L021-(Link Road) L03 to Checki Jurniyal JK15-4006",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-27 11:05:48.611",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224298255,
+    "proposal_no": "FP/JK/OTHERS/575705/2026",
+    "project_name": "Construction and Maintenance of road from L023-(Link Road) Athwatoo to Tangteri JK15-4012",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-27 11:08:43.268",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224123092,
+    "proposal_no": "FP/JK/OTHERS/575490/2026",
+    "project_name": "Construction and Maintenance of road from L021-(Link Road) Athwatoo to Herpora JK15-4009",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-27 00:18:05.669",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224824663,
+    "proposal_no": "FP/JK/OTHERS/576288/2026",
+    "project_name": "Construction and Maintenance of road from L022-(Link Road) Kudara to Kudara Bala JK15-4003",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-06 16:55:08.38",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/575240/2026",
+    "proposal_no": "FP/JK/ROAD/575240/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": "FP/JK/ROAD/575395/2026",
+    "proposal_no": "FP/JK/ROAD/575395/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1221818650,
+    "proposal_no": "FP/JK/ROAD/572488/2026",
+    "project_name": "Construction and Maintenance of Road from L021-(Link Route) Jothal Road to Balsora under Package No. JK05-4001 ",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-08 12:34:47.555",
+    "is_parivesh": true
+  },
+  {
+    "id": 1223672808,
+    "proposal_no": "FP/JK/ROAD/575020/2026",
+    "project_name": "Construction and Maintenance of Road from L024-(Link Route) Ashram to Kowara road under Package No.JK05-4011 ",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-07 12:51:57.37",
+    "is_parivesh": true
+  },
+  {
+    "id": 1222385779,
+    "proposal_no": "FP/JK/ROAD/573284/2026",
+    "project_name": "Construction and Maintenance of Road from L022-(Link Route) Jagti to Simbal Lehar Part 2 under Package No.JK05-4012 ",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-07 13:05:45.875",
+    "is_parivesh": true
+  },
+  {
+    "id": 1225545336,
+    "proposal_no": "FP/JK/ROAD/577007/2026",
+    "project_name": "Construction and Maintenance of road from L023-(Link Route) Deon to Bral Mata road, Package No. JK21-4001",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-02 11:35:27.486",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217729118,
+    "proposal_no": "FP/JK/ROAD/567017/2026",
+    "project_name": "Construction of road  L021-(Link route) Sarain to Bupneargarh , Package No. JK214002 ",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-29 12:51:06.241",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224469711,
+    "proposal_no": "FP/JK/ROAD/575886/2026",
+    "project_name": "Construction and Maintenance of road from L021 (Link Route) Sodam to Sanour via Mansoor P.no. Jk21-4003 Length 11.00 kms",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-07 12:26:29.796",
+    "is_parivesh": true
+  },
+  {
+    "id": 1213941543,
+    "proposal_no": "FP/JK/ROAD/564179/2026",
+    "project_name": "Construction of Link Road from L023- km 10th of Ghatti Suffain to Juthana Road",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1219380228,
+    "proposal_no": "FP/JK/ROAD/569197/2026",
+    "project_name": "CONSTRUCTION OF  L025-(LINK ROAD) GHAGRORE MADHRAKHI ROAD KM 1ST TO LARI, LENGTH = 3.000 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-04-12 01:59:38.06936",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/569196/2006",
+    "proposal_no": "FP/JK/ROAD/569196/2006",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": "FP/JK/ROAD/569187/2006",
+    "proposal_no": "FP/JK/ROAD/569187/2006",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": "FP/JK/ROAD/569095/2006",
+    "proposal_no": "FP/JK/ROAD/569095/2006",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1214689883,
+    "proposal_no": "FP/JK/ROAD/564340/2026",
+    "project_name": "Construction of Link Road From L022 - Behlu to Shewar",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1213527063,
+    "proposal_no": "FP/JK/ROAD/564076/2026",
+    "project_name": "Construction of L023-(Link Road) From KM  7th of Boura Road To  Athialta",
+    "status": "Pending at UA due to EDS by MS after PSC-I",
+    "type": "Forest",
+    "last_updated": "2026-05-06 14:54:49.505",
+    "is_parivesh": true
+  },
+  {
+    "id": 1219383969,
+    "proposal_no": "FP/JK/ROAD/569204/2026",
+    "project_name": "Construction of Road from L045-(Link Road) Ambughat to Bera, Length = 3.0 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/564548/2026",
+    "proposal_no": "FP/JK/ROAD/564548/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1218791736,
+    "proposal_no": "FP/JK/ROAD/568471/2026",
+    "project_name": "L021- (Link Road) Chalog Dhaman Part I Road RD 1.950 to Degutha, Pkg No:-JK074102",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-04-07 01:59:40.614581",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/571799/2026",
+    "proposal_no": "FP/JK/ROAD/571799/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1218685860,
+    "proposal_no": "FP/JK/ROAD/568345/2026",
+    "project_name": "L034-(link road) BB Sukrala Morian Road RD 8.600 to Salli, Pkg No:-JK07-4506",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-04-07 01:59:40.614581",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/ROAD/571275/2026",
+    "proposal_no": "FP/JK/ROAD/571275/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1010179978,
+    "proposal_no": "FP/JK/ROAD/561751/2025",
+    "project_name": "L034 km 4th Manhor Gala to Maku via Pathi (Link Road)",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220100231,
+    "proposal_no": "FP/JK/ROAD/570146/2026",
+    "project_name": "CONSTRUCTION OF LINK ROAD FROM L030 PWD ROAD ATTI GALI TO CHATTI NABNI, (LINK ROAD) LENGTH = 4.265 KM, PACKAGE NO. JK12-4004, PMGSY-IV,",
+    "status": "Pending at UA due to EDS by DFO",
+    "type": "Forest",
+    "last_updated": "2026-04-25 10:03:41.771",
+    "is_parivesh": true
+  },
+  {
+    "id": 995257178,
+    "proposal_no": "FP/JK/ROAD/561657/2025",
+    "project_name": "L029 Sasalkote PMGSY Road to Rathal via Mohra Khatain (Link Road)",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218391496,
+    "proposal_no": "FP/JK/ROAD/567910/2026",
+    "project_name": "Construction  and Maintenance of Road from L032- Link Road km 4th of PWD Khankari Road Jabri Gala to Dhallaha, Length = 5.000 KM",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-22 14:30:27.855",
+    "is_parivesh": true
+  },
+  {
+    "id": 1124451578,
+    "proposal_no": "FP/JK/ROAD/562472/2025",
+    "project_name": "L030-Link Road From Godar to Chiti Dheri Road",
+    "status": "Pending at UA due to EDS by DFO",
+    "type": "Forest",
+    "last_updated": "2026-04-24 11:54:20.306",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217056999,
+    "proposal_no": "FP/JK/ROAD/565996/2026",
+    "project_name": "Construction of L021 Link Road Treru to Daggal Road, Length = 14.716 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 542261978,
+    "proposal_no": "FP/JK/ROAD/559297/2025",
+    "project_name": " L021-Km 6th RD 575 of Rajdhani Paryal Road to  Dartan (Link Road)",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217499767,
+    "proposal_no": "FP/JK/ROAD/566664/2026",
+    "project_name": "Construction of Link Road from L035 Shri Baba Naar Singh Dev Sthan to Vaishno Mata Mandir Droon, length = 5.075 km",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220489483,
+    "proposal_no": "FP/JK/ROAD/570814/2026",
+    "project_name": "CONSTRUCTION OF ROAD FROM L037 LINK ROAD LAM BRO ROAD TO RANJALI (LINK ROAD) LENGTH = 8.000 KM",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-24 11:42:43.388",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220489881,
+    "proposal_no": "FP/JK/ROAD/570816/2026",
+    "project_name": "Construction of Road from L037-TRALLA  JAGIR TO CHAKLI (Link Road).",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224483355,
+    "proposal_no": "FP/JK/ROAD/575902/2026",
+    "project_name": "CONSTRUCTION OF ROAD FROM L034 LINK ROAD GANALI TO BAED GALA ROAD (LINK ROAD) LENGTH = 6.189 KM, PACKAGE NO. JK12-4041, PMGSY-IV, BATCH-I OF 2025-26, ",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-05 17:19:07.999",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217395798,
+    "proposal_no": "FP/JK/OTHERS/566483/2026",
+    "project_name": "CONSTRUCTION OF ROAD FROM L033 BAGLA TO UPPER UJHALAYA (LINK ROAD) PACKAGE NO. JK12-4046, PMGSY-IV, BLOCK DOONGI,",
+    "status": "REMOVED",
+    "type": "Forest",
+    "last_updated": "2026-04-11 15:38:18.364",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217037119,
+    "proposal_no": "FP/JK/ROAD/565966/2026",
+    "project_name": "Construction of Link Route from L023 - Chowki Padder to Aella Length = 2.010 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1221782606,
+    "proposal_no": "FP/JK/ROAD/572454/2026",
+    "project_name": "L039_Link_Road_Steel_Bridge_Solki_to_Braggi_Via_Kikkar_Mohalla_Road",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217057445,
+    "proposal_no": "FP/JK/ROAD/565998/2026",
+    "project_name": "Construction of L031 Link Road Moughla to Sajali Gala via Karlie Road, Length = 8.381 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224958226,
+    "proposal_no": "FP/JK/ROAD/576416/2026",
+    "project_name": "Construction and Maintenance of road L071-Hariban to Doba Narian via Bermiwali, Package No. JK12-4506 (Link Road)",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-22 19:45:15.834",
+    "is_parivesh": true
+  },
+  {
+    "id": 1223879060,
+    "proposal_no": "FP/JK/ROAD/575246/2026",
+    "project_name": "L030- Km 14th of Hsplote Pangau road to Nain Wala Dogra Package No JK12-4514 (Link Road)",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-22 19:47:15.186",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220365591,
+    "proposal_no": "FP/JK/ROAD/570572/2026",
+    "project_name": "Construction and Maintenance of road L029-KM 28th of Gambhir Shahdra road to teri via siruwali Pkg No JK124515(Link Road)",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-04 15:50:25.736",
+    "is_parivesh": true
+  },
+  {
+    "id": 1225003650,
+    "proposal_no": "FP/JK/ROAD/576453/2026",
+    "project_name": "Construction and Maintenance L085 (Link Road) Gura Sarkari to Baryali Moor Via Teilali Jhubimal, Package No. JK12-4501",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-22 14:29:13.226",
+    "is_parivesh": true
+  },
+  {
+    "id": 1224983892,
+    "proposal_no": "FP/JK/ROAD/576432/2026",
+    "project_name": "Construction and Maintenance of road L024-Km 10th RD 300 of Draj-Salhut Road to Mohra Kassi, Package No. JK12-4504 (Link Road)",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-22 15:11:22.032",
+    "is_parivesh": true
+  },
+  {
+    "id": 1210167503,
+    "proposal_no": "FP/JK/ROAD/563376/2025",
+    "project_name": "Construction of Link Road from Gujed to Chirdi Km 7th to Namon Package no. JK14-4004",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1212968298,
+    "proposal_no": "FP/JK/ROAD/563927/2026",
+    "project_name": "Construction of Link Road from NH244 Km 23rd to Seri Soo",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1216433658,
+    "proposal_no": "FP/JK/ROAD/565023/2026",
+    "project_name": "L065 (Link Road) Ossu to Dhar Gaddian Km 5th to Upper Charat Package No.JK14-4009.",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1213569978,
+    "proposal_no": "FP/JK/ROAD/564084/2026",
+    "project_name": "Construction of Link Road Mantalai Sira road Km 15th to Thanoi Koi",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1216435593,
+    "proposal_no": "FP/JK/ROAD/565027/2026",
+    "project_name": "L049 Link road Tandar to Pakhlai Km 17th to Trikund-II Package No. JK14-4011",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220101222,
+    "proposal_no": "FP/JK/ROAD/570158/2026",
+    "project_name": "Construction of L040 (Link Road) Sira-Shivgali road (Kokani) to Dhanali via Kirkeri and Paksoo",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-06 16:52:21.894",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/ROAD/571524/2026",
+    "proposal_no": "FP/ROAD/571524/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1220102149,
+    "proposal_no": "FP/JK/ROAD/570163/2026",
+    "project_name": "Construction of L033 (Link Road) Khualu to Chakka Rajua (using Waste Plastics)",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-30 01:59:44.675856",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220128441,
+    "proposal_no": "FP/JK/ROAD/570195/2026",
+    "project_name": "construction of Road From L077 - (Link Road) Pardai to Upper Pardai, Length = 2.350 KM",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-22 15:42:46.966",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217497015,
+    "proposal_no": "FP/JK/ROAD/566659/2026",
+    "project_name": "Construction of Link Road from L065 - Katra to Rajouri Road  KM 80th to Bissikalakote Road Length = 7.300 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218530499,
+    "proposal_no": "FP/JK/ROAD/568109/2026",
+    "project_name": "Construction of Road from L066 - (Link Road) Jammu to Poonch Road KM 48th to  Kharoti, Length = 2.500 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217498490,
+    "proposal_no": "FP/JK/ROAD/566663/2026",
+    "project_name": "Construction of Link Road from L069 - Ransoo to Bamlia Sangar (Army Tower)  KM 13th to  Phargul, Length = 10.475 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1221044685,
+    "proposal_no": "FP/JK/ROAD/571498/2026",
+    "project_name": "Construction of Road from L138 - (Link Road) Pangalad to Devipini via Sukhalghati and Sukhalgali,  Length = 38.325 KM",
+    "status": "Pending at UA due to EDS by MS after PSC-I",
+    "type": "Forest",
+    "last_updated": "2026-05-06 13:50:58.214",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217515354,
+    "proposal_no": "FP/JK/ROAD/566686/2026",
+    "project_name": "Construction of Link Road from L023 - Reasi to Mohore Road KM 6th to  Tronth Road, Length = 6.500 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217526497,
+    "proposal_no": "FP/JK/ROAD/566720/2026",
+    "project_name": "Construction of Link Road from L124 Anji to Panasa Road KM 4th to  Mandlaian Road, Length = 6.000 km",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-07 01:59:25.368365",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220129849,
+    "proposal_no": "FP/JK/ROAD/570200/2026",
+    "project_name": "L023-(Link Road)Moungri To Ladda Road KM 18th to Chunta Gali via kharkankot, Package No. JK144501, Block Moungri, District Udhampur Length 6.725 KM",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-09 16:17:32.944",
+    "is_parivesh": true
+  },
+  {
+    "id": 1219272496,
+    "proposal_no": "FP/JK/ROAD/569070/2026",
+    "project_name": "Construction of road from Kanthan Sawalakote railway road Km 25th to Garipanthal, Package No. JK20-4211.",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-04-03 01:59:42.661849",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220002757,
+    "proposal_no": "FP/JK/ROAD/570047/2026",
+    "project_name": "Construction and Maintenance of road from L658-Angralla to Gulabgarh Km 17th to Panchar koli",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-02 15:09:27.083",
+    "is_parivesh": true
+  },
+  {
+    "id": 1219185178,
+    "proposal_no": "FP/JK/ROAD/568959/2026",
+    "project_name": "Construction & Maintenance of road from L-138(Link Road) Tilkathi morh to Musra lower Badhora, Package No JK20-4200",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-07 17:21:10.927",
+    "is_parivesh": true
+  },
+  {
+    "id": 1221647385,
+    "proposal_no": "FP/JK/ROAD/572269/2026",
+    "project_name": "Construction and maintenance of road from L037-(Link) Bagla To Dudwah Harkhan, Package no.:JK04-4007,PMGSY-IV,Batch-I of 2025-26,Block -Dali Udhyanpur, District Doda (Using Waste Plastic) Length -5.00km",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-10 01:59:23.855638",
+    "is_parivesh": true
+  },
+  {
+    "id": 773171978,
+    "proposal_no": "FP/JK/ROAD/560293/2025",
+    "project_name": "Construction and maintenance of Road from L084-(link road)km 3rd of Bhalra Ghuraka road to Sharora via sangoi, Package No JK04-4001,PMGSY-IV,Batch-1 of 2025-26,Block Bhaderwah, District Doda",
+    "status": "Pending at DFO for Scrutiny and Recommendation",
+    "type": "Forest",
+    "last_updated": "2026-05-06 11:17:16.429",
+    "is_parivesh": true
+  },
+  {
+    "id": 1215481723,
+    "proposal_no": "FP/JK/ROAD/564544/2026",
+    "project_name": "Construction of link road from Bemina to Laloor Teh Kastigarh District Doda Pkg No  JK04-4014  uder PMGSY-IV ",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-06 13:18:44.171",
+    "is_parivesh": true
+  },
+  {
+    "id": 816801578,
+    "proposal_no": "FP/JK/ROAD/560561/2025",
+    "project_name": "Construction and Maintenance of road from L041-(link road) Gajoth to Chanti Tatora, Package No.JK04-4004,PMGSY -IV, Batch-1 of  2025-26,Block -Bhalla, District Doda",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-28 10:29:42.121",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217049555,
+    "proposal_no": "FP/JK/ROAD/565981/2026",
+    "project_name": "Construction and Maintenance of L028-(Link Road) KM 4th RD400 Gangalwar to sarsi Part-II road to Dherian Package No: JK04-4012 , PMGSY IV,Batch I of 2025-26, Block Khellani, District Doda Length 2.130Kms",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1216186378,
+    "proposal_no": "FP/JK/ROAD/564736/2026",
+    "project_name": "Construction and Maintenance of Road from L059-(Link Road) Juddi to Bhakhna Package No.-JK04-4005, PMGSY-IV, Batch-I of 2025-26, Block Gundana District Doda Length 13.400 Km   ",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-09 17:32:47.683",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217041852,
+    "proposal_no": "FP/JK/ROAD/565969/2026",
+    "project_name": "Construction and Maintenance of road from L054-(link road) KM 28th RD200 Dansal to Assar Road to Patta Via Hirni ,From K.M 0/000 to KM 15/030 Package No.JK04-4010, PMGSY-IV,Batch-I of 2025-26,Block-Assar,Doda,Length=15.030Kms",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217003006,
+    "proposal_no": "FP/JK/ROAD/565909/2026",
+    "project_name": "Construction of KM 2nd OF BHAGWAH DESSA ROAD TO CHAKWA VIA SHINKHLY UNDER PMGSY IV PKG NO JK04-4011 Teh Bhagwah Dist Doda",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-11 01:59:23.351825",
+    "is_parivesh": true
+  },
+  {
+    "id": 1221094167,
+    "proposal_no": "FP/JK/ROAD/571569/2026",
+    "project_name": "L102-(Link road) Gamnaog to Nakka via Jawari",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-06 13:51:11.361",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220098336,
+    "proposal_no": "FP/JK/OTHERS/570142/2026",
+    "project_name": "L096-(Link road) Khunga to Kothi JagirKm 12th Gandhri to Dhandi Via Barnal",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-29 23:06:21.511",
+    "is_parivesh": true
+  },
+  {
+    "id": 1211698028,
+    "proposal_no": "FP/JK/OTHERS/563686/2025",
+    "project_name": "L089-(Link road) Gagrasulla to Gundi via Chana",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-06 13:50:44.915",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220101678,
+    "proposal_no": "FP/JK/OTHERS/570160/2026",
+    "project_name": "L091-(Link road) Khunga to Kothi Jagir road Km 16th Aflog to Santhi",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-29 15:59:50.31",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217410940,
+    "proposal_no": "FP/JK/ROAD/566509/2026",
+    "project_name": "L-154-(Link Road) Karol Kumait Road KM 7th to Challali via Dhandla upto Yeroga",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-04-25 13:22:57.919",
+    "is_parivesh": true
+  },
+  {
+    "id": 1226510711,
+    "proposal_no": "FP/JK/ROAD/577925/2026",
+    "project_name": "L090-(Link road) Maghdar to Muranch via Nalli",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-05-06 17:56:22.617",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220095299,
+    "proposal_no": "FP/JK/OTHERS/570136/2026",
+    "project_name": "L089-( Link Road) Batote Chakwa road km 9th Dharalta to Pasyal",
+    "status": "Pending at UA for DFO EDS Reply",
+    "type": "Forest",
+    "last_updated": "2026-04-29 23:01:51.421",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218572635,
+    "proposal_no": "FP/JK/ROAD/568172/2026",
+    "project_name": "4.\tConstruction and maintenance of Road from L039-(Link Road) PWD Road Kawna To Buzla,  Package No. JK19-4004, PMGSY-IV Batch-I of 2025-26, Block-  Khari , District Ramban Length- 6.000    kms    ",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-13 01:59:53.142401",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218573673,
+    "proposal_no": "FP/JK/ROAD/568174/2026",
+    "project_name": "3. Construction and maintenance of Road from L034-(Link Road) Railway Station Seran to Lablutha via Khowda,   Package No. JK194005,  PMGSY-IV, Batch-I of 2025-26 Block-  Khari , District Ramban Length-   5.300  kms",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-04-06 01:59:41.121875",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218554126,
+    "proposal_no": "FP/JK/ROAD/568163/2026",
+    "project_name": "7.\tConstruction and maintenance of Road from L032-(Link Road) Khari to Kundan, Package No. JK19-4006, PMGSY-IV Batch-I of 2025-26, Block- Khari  , District Ramban Length-   2.500  kms",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-13 01:59:53.142401",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218555073,
+    "proposal_no": "FP/JK/ROAD/568165/2026",
+    "project_name": "5.\tConstruction and maintenance of Road from L033-(Link Road) Magerkote to Dardehi, Package No. JK19-4007, PMGSY-IV Batch-I of 2025-26 Block-  Ramsoo , District Ramban, Length-   11.500  kms.",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-13 01:59:53.142401",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218553287,
+    "proposal_no": "FP/JK/ROAD/568160/2026",
+    "project_name": "8.\tConstruction and maintenance of Road from L031-(Link Road) Dhanmasta to Kharwan via Runigam, Package No. JK19-4008, PMGSY-IV Batch-I of 2025-26 Block- Ramsoo  , District Ramban Length-   4.60 kms",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-13 01:59:53.142401",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218554636,
+    "proposal_no": "FP/JK/ROAD/568164/2026",
+    "project_name": "6.\tConstruction and maintenance of Road from   L034-(Link Road) PMGSY Road Bhingara to Upper Phagmullah, Package No. JK19-4009, PMGSY-IV, Batch-I of 2025-26 Block-  Ukhral , District Ramban Length- 3.700    kms.   ",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-13 01:59:53.142401",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217803894,
+    "proposal_no": "FP/JK/ROAD/567140/2026",
+    "project_name": "Construction and Maintenance of Road from L039-Link road from  NH44 Ramsoo to Sarbagni Bowdar, Package no. JK19-4011, PMGSY-IV,Batch-I of 2025-26, Block Ramsu, District Ramban Length-6.500 Kms.",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-07 01:59:56.109685",
+    "is_parivesh": true
+  },
+  {
+    "id": 1218575572,
+    "proposal_no": "FP/JK/ROAD/568177/2026",
+    "project_name": "2.\tConstruction and maintenance of Road from L033-Link Road from PMGSY Road Senabati to Dal prakar, Package No. JK194013, PMGSY-IV, Batch-I of 2025-26 Block-   Ukhral, District Ramban Length-  6.400  kms.",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-03-12 01:59:53.631802",
+    "is_parivesh": true
+  },
+  {
+    "id": "FP/JK/Road/584761/2026",
+    "proposal_no": "FP/JK/Road/584761/2026",
+    "project_name": "Not yet on portal",
+    "status": "MANUAL TRACKING",
+    "type": "Manual",
+    "last_updated": "N/A",
+    "is_parivesh": false
+  },
+  {
+    "id": 1217900991,
+    "proposal_no": "FP/JK/ROAD/567272/2026",
+    "project_name": "Construction of Link Road from L067 - PWD Road KM 2nd RD 050 to Sewa Road, Length = 1.700 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1216847293,
+    "proposal_no": "FP/JK/ROAD/565646/2026",
+    "project_name": "Construction of Link Road from L025 Deller to Dichher Road, Length = 5.100 km",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217211814,
+    "proposal_no": "FP/JK/ROAD/566186/2026",
+    "project_name": "Construction of Link Road from L026 Batwari to Urigarh, Length = 2.300 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217905929,
+    "proposal_no": "FP/JK/ROAD/567283/2026",
+    "project_name": "Construction of Link Road from L029 - PWD Road Thalkwath KM 8th RD 800 to Chass Road, Length = 4.300 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1217208585,
+    "proposal_no": "FP/JK/ROAD/566173/2026",
+    "project_name": "Construction of Link Road from L049 Sambole to Basha, Length = 2.700 KM",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1219866471,
+    "proposal_no": "FP/JK/ROAD/569846/2026",
+    "project_name": "L029-(Link Road) Sirshi to Kiyar Via chichha, Package No:- JK17-4501",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1221032937,
+    "proposal_no": "FP/JK/ROAD/571470/2026",
+    "project_name": "CONSTRUCTION OF LINK ROAD FROM L032 INSHAN MARGI ROAD KM 7TH RD 450 AAFTEE TO KUZUZ ROAD",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220097310,
+    "proposal_no": "FP/JK/ROAD/570140/2026",
+    "project_name": "L024 NOWPACHI HANZAL KM 11TH RD 150 TO DEHARNA ROAD",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
+  },
+  {
+    "id": 1220098362,
+    "proposal_no": "FP/JK/ROAD/570143/2026",
+    "project_name": "L022 YOURDU QADERNA KM 2ND RD 225 TO HAMDANDOO VIA TRITHEL TAKSAREN ROAD,",
+    "status": "DELISTED_BY_SYSTEM",
+    "type": "Forest",
+    "last_updated": "2026-05-09 01:59:24.387561",
+    "is_parivesh": true
   }
 ]

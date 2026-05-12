@@ -81,6 +81,10 @@ export default function Dashboard() {
           </div>
           
           <div className="flex items-center gap-4">
+            <button className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-full transition-all shadow-lg shadow-indigo-600/20 text-sm font-medium">
+              <Activity size={16} className="animate-pulse" />
+              Sync Now
+            </button>
             <div className="relative group">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-indigo-400 transition-colors" size={18} />
               <input 
