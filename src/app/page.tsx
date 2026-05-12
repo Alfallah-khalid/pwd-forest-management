@@ -38,7 +38,7 @@ export default function Dashboard() {
         .order('last_updated', { ascending: false });
 
       if (data && data.length > 0) {
-        const mapped = data.map(p => ({
+        const mapped = data.map((p: any) => ({
           id: p.id,
           proposal_no: p.proposal_no,
           project_name: p.project_name || 'No Name',
@@ -84,7 +84,7 @@ export default function Dashboard() {
       } else {
         alert('Sync failed: ' + data.error);
       }
-    } catch (err) {
+    } catch (err: any) {
       alert('Sync error: ' + err.message);
     } finally {
       setIsSyncing(false);
@@ -92,7 +92,7 @@ export default function Dashboard() {
   };
 
   const exportToExcel = () => {
-    const exportData = projects.map(p => ({
+    const exportData = projects.map((p: any) => ({
       'Proposal Name': p.project_name,
       'Status': p.status,
       'Proposal Code': p.proposal_no,
