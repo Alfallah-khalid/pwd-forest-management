@@ -19,6 +19,7 @@ import {
 } from 'lucide-react';
 
 import { supabase } from '@/lib/supabase';
+import * as XLSX from 'xlsx';
 import projectsData from '@/data/projects.json';
 
 export default function Dashboard() {
@@ -29,6 +30,7 @@ export default function Dashboard() {
   const [isSyncing, setIsSyncing] = useState(false);
 
   const fetchProjects = async () => {
+    if (!supabase) return;
     try {
       const { data, error } = await supabase
         .from('projects')
@@ -43,8 +45,11 @@ export default function Dashboard() {
           status: p.status || 'Unknown',
           type: p.proposal_no.startsWith('FP/') ? 'Forest' : 
                 p.proposal_no.startsWith('WL/') ? 'Wildlife' : 'Manual',
-          last_updated: new Date(p.last_updated).toLocaleDateString(),
-          is_parivesh: p.is_parivesh
+          last_updated_date: p.latest_status_date ? new Date(p.latest_status_date).toLocaleDateString() : 'N/A',
+          previous_status: p.previous_status || 'N/A',
+          previous_status_date: p.previous_status_date ? new Date(p.previous_status_date).toLocaleDateString() : 'N/A',
+          is_parivesh: p.is_parivesh,
+          proposal_id: p.proposal_id
         }));
         setRawProjects(mapped);
       }
@@ -86,9 +91,36 @@ export default function Dashboard() {
     }
   };
 
+  const exportToExcel = () => {
+    const exportData = projects.map(p => ({
+      'Proposal Name': p.project_name,
+      'Status': p.status,
+      'Proposal Code': p.proposal_no,
+      'Type': p.type,
+      'Latest Status Date': p.last_updated_date,
+      'Previous Status': p.previous_status,
+      'Previous Status Date': p.previous_status_date
+    }));
+
+    const ws = XLSX.utils.json_to_sheet(exportData);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Forest Proposals');
+    XLSX.writeFile(wb, 'PWD_Forest_Proposals.xlsx');
+  };
+
+  const openPariveshDetails = (project: any) => {
+    let url = '';
+    if (project.proposal_no.startsWith('FP/')) {
+        url = `https://parivesh.nic.in/newupgrade/#/trackYourProposals/proposal-details?proposalId=${project.proposal_id || project.id}`;
+    } else if (project.proposal_no.startsWith('WL/')) {
+        url = `https://parivesh.nic.in/newupgrade/#/trackYourProposal/proposal-details?proposalNo=${encodeURIComponent(project.proposal_no)}`;
+    }
+    if (url) window.open(url, '_blank');
+  };
+
   return (
     <div className="flex min-h-screen">
-      {/* Sidebar */}
+      {/* Sidebar ... */}
       <aside className="w-64 glass border-r border-white/5 flex flex-col sticky top-0 h-screen">
         <div className="p-6">
           <div className="flex items-center gap-3 mb-8">
@@ -122,7 +154,6 @@ export default function Dashboard() {
         </div>
       </aside>
 
-      {/* Main Content */}
       <main className="flex-1 p-8 lg:p-12 overflow-y-auto">
         <header className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
           <div>
@@ -131,6 +162,13 @@ export default function Dashboard() {
           </div>
           
           <div className="flex items-center gap-4">
+            <button 
+              onClick={exportToExcel}
+              className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 border border-white/10 rounded-full transition-all text-sm font-medium"
+            >
+              <FileText size={16} />
+              Export Excel
+            </button>
             <button 
               onClick={handleSync}
               disabled={isSyncing}
@@ -143,35 +181,31 @@ export default function Dashboard() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-indigo-400 transition-colors" size={18} />
               <input 
                 type="text" 
-                placeholder="Search proposal code or name..."
+                placeholder="Search..."
                 className="bg-slate-900/50 border border-white/5 rounded-full py-2 pl-10 pr-4 w-64 focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50 transition-all outline-none"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
-            <button className="p-2 bg-slate-900/50 border border-white/5 rounded-full hover:bg-slate-800 transition-colors">
-              <Filter size={18} />
-            </button>
           </div>
         </header>
 
-        {/* Stats Grid */}
+        {/* Stats Grid ... */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <StatCard title="Total Proposals" value="116" icon={<FileText className="text-indigo-400" />} change="+12%" />
-          <StatCard title="Pending Clearance" value="48" icon={<Clock className="text-amber-400" />} change="+5%" />
-          <StatCard title="Approved" value="32" icon={<CheckCircle2 className="text-emerald-400" />} change="+8%" />
-          <StatCard title="Manual/Draft" value="14" icon={<AlertCircle className="text-rose-400" />} change="0%" />
+          <StatCard title="Total Proposals" value={rawProjects.length.toString()} icon={<FileText className="text-indigo-400" />} change="+12%" />
+          <StatCard title="Pending Clearance" value={rawProjects.filter(p => p.status.includes('Pending')).length.toString()} icon={<Clock className="text-amber-400" />} change="+5%" />
+          <StatCard title="Approved" value={rawProjects.filter(p => p.status.includes('Approved')).length.toString()} icon={<CheckCircle2 className="text-emerald-400" />} change="+8%" />
+          <StatCard title="Wildlife" value={rawProjects.filter(p => p.type === 'Wildlife').length.toString()} icon={<AlertCircle className="text-rose-400" />} change="0%" />
         </section>
 
         {/* Projects List */}
         <section className="glass rounded-3xl overflow-hidden border border-white/5">
           <div className="p-6 border-b border-white/5 flex items-center justify-between">
-            <h3 className="font-semibold text-lg">Recent Projects</h3>
+            <h3 className="font-semibold text-lg">Detailed Report</h3>
             <div className="flex gap-2">
               <FilterButton label="All" active={selectedFilter === 'all'} onClick={() => setSelectedFilter('all')} />
               <FilterButton label="Forest" active={selectedFilter === 'forest'} onClick={() => setSelectedFilter('forest')} />
               <FilterButton label="Wildlife" active={selectedFilter === 'wildlife'} onClick={() => setSelectedFilter('wildlife')} />
-              <FilterButton label="Manual" active={selectedFilter === 'manual'} onClick={() => setSelectedFilter('manual')} />
             </div>
           </div>
 
@@ -179,31 +213,29 @@ export default function Dashboard() {
             <table className="w-full text-left">
               <thead>
                 <tr className="text-xs uppercase tracking-wider text-slate-500 bg-slate-900/30">
-                  <th className="px-6 py-4 font-medium">Project Details</th>
+                  <th className="px-6 py-4 font-medium">Proposal Name</th>
                   <th className="px-6 py-4 font-medium">Proposal Code</th>
                   <th className="px-6 py-4 font-medium">Type</th>
-                  <th className="px-6 py-4 font-medium">Status</th>
-                  <th className="px-6 py-4 font-medium text-right">Actions</th>
+                  <th className="px-6 py-4 font-medium">Latest Status</th>
+                  <th className="px-6 py-4 font-medium">Latest Date</th>
+                  <th className="px-6 py-4 font-medium">Prev Status</th>
+                  <th className="px-6 py-4 font-medium">Prev Date</th>
+                  <th className="px-6 py-4 font-medium text-right">Details</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
                 {projects.map((project) => (
-                  <tr key={project.id} className="hover:bg-white/[0.02] transition-colors group">
-                    <td className="px-6 py-5">
-                      <div className="max-w-md">
-                        <p className="font-medium text-slate-200 line-clamp-1">{project.project_name}</p>
-                        <p className="text-xs text-slate-500 mt-1 flex items-center gap-2">
-                          <Clock size={12} /> Last updated: {project.last_updated}
-                        </p>
-                      </div>
+                  <tr key={project.id} className="hover:bg-white/[0.02] transition-colors group text-sm">
+                    <td className="px-6 py-5 max-w-xs">
+                      <p className="font-medium text-slate-200 line-clamp-2">{project.project_name}</p>
                     </td>
                     <td className="px-6 py-5">
-                      <span className="font-mono text-xs text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded border border-indigo-500/20">
+                      <span className="font-mono text-[10px] text-indigo-400 bg-indigo-500/10 px-2 py-1 rounded border border-indigo-500/20">
                         {project.proposal_no}
                       </span>
                     </td>
                     <td className="px-6 py-5">
-                      <span className={`text-xs px-2 py-1 rounded-full border ${
+                      <span className={`text-[10px] px-2 py-1 rounded-full border ${
                         project.type === 'Forest' ? 'border-emerald-500/20 text-emerald-400 bg-emerald-500/10' :
                         project.type === 'Wildlife' ? 'border-amber-500/20 text-amber-400 bg-amber-500/10' :
                         'border-slate-500/20 text-slate-400 bg-slate-500/10'
@@ -213,17 +245,23 @@ export default function Dashboard() {
                     </td>
                     <td className="px-6 py-5">
                       <div className="flex items-center gap-2">
-                        <div className={`w-2 h-2 rounded-full ${
-                          project.status.includes('Approved') ? 'bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]' :
-                          project.status.includes('Pending') ? 'bg-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.5)]' :
-                          'bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.5)]'
+                        <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${
+                          project.status.includes('Approved') ? 'bg-emerald-500' :
+                          project.status.includes('Pending') ? 'bg-amber-500' :
+                          'bg-indigo-500'
                         }`} />
-                        <span className="text-sm text-slate-300">{project.status}</span>
+                        <span className="text-slate-300 line-clamp-1">{project.status}</span>
                       </div>
                     </td>
+                    <td className="px-6 py-5 text-slate-400 whitespace-nowrap">{project.last_updated_date}</td>
+                    <td className="px-6 py-5 text-slate-500 max-w-[100px] truncate">{project.previous_status}</td>
+                    <td className="px-6 py-5 text-slate-500 whitespace-nowrap">{project.previous_status_date}</td>
                     <td className="px-6 py-5 text-right">
-                      <button className="p-2 hover:bg-slate-800 rounded-lg transition-colors group-hover:text-indigo-400">
-                        <ChevronRight size={20} />
+                      <button 
+                        onClick={() => openPariveshDetails(project)}
+                        className="p-2 hover:bg-slate-800 rounded-lg transition-colors group-hover:text-indigo-400"
+                      >
+                        <ChevronRight size={18} />
                       </button>
                     </td>
                   </tr>

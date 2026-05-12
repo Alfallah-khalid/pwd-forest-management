@@ -32,11 +32,21 @@ export async function POST() {
         console.log(`Syncing ${proposalNos.length} proposals...`);
 
         const client = new Client({
-            connectionString: process.env.POSTGRES_URL,
+            connectionString: process.env.POSTGRES_URL || 'postgresql://postgres:[JGAjgd@542543]@db.szlkgxsutvduqfabxqch.supabase.co:5432/postgres',
             ssl: { rejectUnauthorized: false }
         });
 
-        await client.connect();
+        console.log('Connecting to DB...');
+        try {
+            await client.connect();
+            console.log('DB Connected.');
+        } catch (dbErr) {
+            console.error('DB Connection Failed:', dbErr.message);
+            return NextResponse.json({ 
+                error: 'Database connection failed. Please check your network (IPv6 might be required).', 
+                details: dbErr.message 
+            }, { status: 500 });
+        }
 
         // Limit sync to first 20 in API route to avoid timeout
         const subset = proposalNos.slice(0, 20);
@@ -48,16 +58,54 @@ export async function POST() {
                 const item = data.data?.[0];
 
                 if (item) {
+                    // Fetch History
+                    let historyData = [];
+                    try {
+                        let historyUrl = '';
+                        if (proposalNo.startsWith('FP/')) {
+                            historyUrl = `${BASE_URL}/parivesh_api/application/history?applicationId=${item.application_id || item.proposal_id}`;
+                        } else if (proposalNo.startsWith('WL/')) {
+                            historyUrl = `${BASE_URL}/ua/wlcTrackYourProposal/proposal-workflow-history?proposalNo=${encodeURIComponent(proposalNo)}`;
+                        }
+                        
+                        if (historyUrl) {
+                            const hRes = await fetch(historyUrl, { headers: HEADERS });
+                            const hJson = await hRes.json();
+                            historyData = hJson.data || [];
+                        }
+                    } catch (he) {
+                        console.warn(`History fetch failed for ${proposalNo}:`, he.message);
+                    }
+
+                    const latest = historyData[0] || {};
+                    const previous = historyData[1] || {};
+
+                    const latestStatus = latest.activity || latest.status || item.proposalStatus;
+                    const latestDate = latest.startDate || latest.date || item.submission_date;
+                    const prevStatus = previous.activity || previous.status || null;
+                    const prevDate = previous.startDate || previous.date || null;
+
                     await client.query(`
-                        INSERT INTO projects (proposal_no, proposal_id, project_name, status, raw_data, last_updated)
-                        VALUES ($1, $2, $3, $4, $5, NOW())
+                        INSERT INTO projects (
+                            proposal_no, proposal_id, project_name, status, 
+                            latest_status_date, previous_status, previous_status_date,
+                            raw_data, last_updated
+                        )
+                        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, NOW())
                         ON CONFLICT (proposal_no) DO UPDATE SET
                             proposal_id = EXCLUDED.proposal_id,
                             project_name = EXCLUDED.project_name,
                             status = EXCLUDED.status,
+                            latest_status_date = EXCLUDED.latest_status_date,
+                            previous_status = EXCLUDED.previous_status,
+                            previous_status_date = EXCLUDED.previous_status_date,
                             raw_data = EXCLUDED.raw_data,
                             last_updated = NOW()
-                    `, [proposalNo, item.proposal_id, item.projectName, item.proposalStatus, item]);
+                    `, [
+                        proposalNo, item.proposal_id, item.projectName, item.proposalStatus,
+                        latestDate, prevStatus, prevDate,
+                        item
+                    ]);
                 }
             } catch (e) {
                 console.error(`Error syncing ${proposalNo}:`, e.message);
