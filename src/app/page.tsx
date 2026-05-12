@@ -22,11 +22,25 @@ import { supabase } from '@/lib/supabase';
 import * as XLSX from 'xlsx';
 import projectsData from '@/data/projects.json';
 
+interface Project {
+  id: any;
+  proposal_no: string;
+  project_name: string;
+  status: string;
+  type: string;
+  last_updated_date?: string;
+  last_updated?: string;
+  previous_status?: string;
+  previous_status_date?: string;
+  is_parivesh?: boolean;
+  proposal_id?: string;
+}
+
 export default function Dashboard() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('all');
-  const [rawProjects, setRawProjects] = useState(projectsData);
-  const [projects, setProjects] = useState(projectsData);
+  const [rawProjects, setRawProjects] = useState<Project[]>(projectsData as any);
+  const [projects, setProjects] = useState<Project[]>(projectsData as any);
   const [isSyncing, setIsSyncing] = useState(false);
 
   const fetchProjects = async () => {
@@ -38,7 +52,7 @@ export default function Dashboard() {
         .order('last_updated', { ascending: false });
 
       if (data && data.length > 0) {
-        const mapped = data.map((p: any) => ({
+        const mapped: Project[] = data.map((p: any) => ({
           id: p.id,
           proposal_no: p.proposal_no,
           project_name: p.project_name || 'No Name',
@@ -108,7 +122,7 @@ export default function Dashboard() {
     XLSX.writeFile(wb, 'PWD_Forest_Proposals.xlsx');
   };
 
-  const openPariveshDetails = (project: any) => {
+  const openPariveshDetails = (project: Project) => {
     let url = '';
     if (project.proposal_no.startsWith('FP/')) {
         url = `https://parivesh.nic.in/newupgrade/#/trackYourProposals/proposal-details?proposalId=${project.proposal_id || project.id}`;
