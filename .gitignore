@@ -39,7 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 # custom
-Forest.csv
 *_api.mjs
 scrape_to_json.mjs
 sync_projects.mjs

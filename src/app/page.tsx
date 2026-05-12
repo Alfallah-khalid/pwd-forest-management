@@ -18,15 +18,47 @@ import {
   Activity
 } from 'lucide-react';
 
+import { supabase } from '@/lib/supabase';
 import projectsData from '@/data/projects.json';
 
 export default function Dashboard() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState('all');
+  const [rawProjects, setRawProjects] = useState(projectsData);
   const [projects, setProjects] = useState(projectsData);
+  const [isSyncing, setIsSyncing] = useState(false);
+
+  const fetchProjects = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*')
+        .order('last_updated', { ascending: false });
+
+      if (data && data.length > 0) {
+        const mapped = data.map(p => ({
+          id: p.id,
+          proposal_no: p.proposal_no,
+          project_name: p.project_name || 'No Name',
+          status: p.status || 'Unknown',
+          type: p.proposal_no.startsWith('FP/') ? 'Forest' : 
+                p.proposal_no.startsWith('WL/') ? 'Wildlife' : 'Manual',
+          last_updated: new Date(p.last_updated).toLocaleDateString(),
+          is_parivesh: p.is_parivesh
+        }));
+        setRawProjects(mapped);
+      }
+    } catch (err) {
+      console.error('Error fetching from Supabase:', err);
+    }
+  };
 
   useEffect(() => {
-    const filtered = projectsData.filter(p => {
+    fetchProjects();
+  }, []);
+
+  useEffect(() => {
+    const filtered = rawProjects.filter(p => {
       const matchesSearch = p.project_name.toLowerCase().includes(searchTerm.toLowerCase()) || 
                            p.proposal_no.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesFilter = selectedFilter === 'all' || 
@@ -34,7 +66,25 @@ export default function Dashboard() {
       return matchesSearch && matchesFilter;
     });
     setProjects(filtered);
-  }, [searchTerm, selectedFilter]);
+  }, [searchTerm, selectedFilter, rawProjects]);
+
+  const handleSync = async () => {
+    setIsSyncing(true);
+    try {
+      const res = await fetch('/api/sync', { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        await fetchProjects();
+        alert('Sync completed successfully!');
+      } else {
+        alert('Sync failed: ' + data.error);
+      }
+    } catch (err) {
+      alert('Sync error: ' + err.message);
+    } finally {
+      setIsSyncing(false);
+    }
+  };
 
   return (
     <div className="flex min-h-screen">
@@ -81,9 +131,13 @@ export default function Dashboard() {
           </div>
           
           <div className="flex items-center gap-4">
-            <button className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-full transition-all shadow-lg shadow-indigo-600/20 text-sm font-medium">
-              <Activity size={16} className="animate-pulse" />
-              Sync Now
+            <button 
+              onClick={handleSync}
+              disabled={isSyncing}
+              className={`flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-full transition-all shadow-lg shadow-indigo-600/20 text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed`}
+            >
+              <Activity size={16} className={isSyncing ? 'animate-spin' : 'animate-pulse'} />
+              {isSyncing ? 'Syncing...' : 'Sync Now'}
             </button>
             <div className="relative group">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-indigo-400 transition-colors" size={18} />
