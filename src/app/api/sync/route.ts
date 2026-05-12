@@ -40,7 +40,7 @@ export async function POST() {
         try {
             await client.connect();
             console.log('DB Connected.');
-        } catch (dbErr) {
+        } catch (dbErr: any) {
             console.error('DB Connection Failed:', dbErr.message);
             return NextResponse.json({ 
                 error: 'Database connection failed. Please check your network (IPv6 might be required).', 
@@ -73,7 +73,7 @@ export async function POST() {
                             const hJson = await hRes.json();
                             historyData = hJson.data || [];
                         }
-                    } catch (he) {
+                    } catch (he: any) {
                         console.warn(`History fetch failed for ${proposalNo}:`, he.message);
                     }
 
@@ -107,7 +107,7 @@ export async function POST() {
                         item
                     ]);
                 }
-            } catch (e) {
+            } catch (e: any) {
                 console.error(`Error syncing ${proposalNo}:`, e.message);
             }
         }
@@ -115,7 +115,7 @@ export async function POST() {
         await client.end();
         return NextResponse.json({ success: true, message: `Synced ${subset.length} projects` });
 
-    } catch (error) {
+    } catch (error: any) {
         console.error('Sync error:', error);
         return NextResponse.json({ error: error.message }, { status: 500 });
     }
