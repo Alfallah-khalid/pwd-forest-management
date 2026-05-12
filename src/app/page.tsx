@@ -253,9 +253,9 @@ export default function Dashboard() {
                         <span className="text-slate-300 line-clamp-1">{project.status}</span>
                       </div>
                     </td>
-                    <td className="px-6 py-5 text-slate-400 whitespace-nowrap">{project.last_updated_date}</td>
-                    <td className="px-6 py-5 text-slate-500 max-w-[100px] truncate">{project.previous_status}</td>
-                    <td className="px-6 py-5 text-slate-500 whitespace-nowrap">{project.previous_status_date}</td>
+                    <td className="px-6 py-5 text-slate-400 whitespace-nowrap">{project.last_updated_date || project.last_updated || 'N/A'}</td>
+                    <td className="px-6 py-5 text-slate-500 max-w-[100px] truncate">{project.previous_status || 'N/A'}</td>
+                    <td className="px-6 py-5 text-slate-500 whitespace-nowrap">{project.previous_status_date || 'N/A'}</td>
                     <td className="px-6 py-5 text-right">
                       <button 
                         onClick={() => openPariveshDetails(project)}
